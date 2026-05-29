@@ -1,10 +1,27 @@
 {
   "version": 4,
-  "appVersion": "v.004",
-  "exportedAt": "2026-05-29T00:00:00.000Z",
-  "total": 0,
-  "categoryOrder": [],
-  "colors": {},
-  "icons": {},
-  "prompts": []
+  "encoding": "gzip-base64-chunks",
+  "total": 117,
+  "categoryOrder": [
+    "文本提示词",
+    "创意提示词",
+    "拆分-工作流",
+    "生图-修改",
+    "生图-电商类",
+    "生图-海报类",
+    "生图-主视觉",
+    "生图-美陈类",
+    "生图-延展类",
+    "品牌-联方",
+    "品牌-国林",
+    "其他",
+    "高清修复",
+    "拆分"
+  ],
+  "chunks": [
+    "data/chunk0.txt",
+    "data/chunk1.txt",
+    "data/chunk2.txt",
+    "data/chunk3.txt"
+  ]
 }

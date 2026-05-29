@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>账单管理</title>
+<style>
+:root{--bg:#f6f7fb;--panel:#fff;--ink:#172033;--muted:#6b7485;--line:#e7ebf2;--blue:#246bfe;--green:#18a058;--red:#d93025;--orange:#ff7a1a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif}.app{max-width:1280px;margin:0 auto;padding:22px}.top{display:flex;gap:14px;justify-content:space-between;align-items:flex-start;margin-bottom:16px}.top h1{margin:0;font-size:28px}.top p{margin:6px 0 0;color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.btn{border:0;border-radius:10px;padding:10px 13px;font-weight:800;cursor:pointer;background:#1d2638;color:#fff}.btn.secondary{background:#fff;color:#263249;border:1px solid var(--line)}.btn.green{background:var(--green)}.btn.blue{background:var(--blue)}.btn.red{background:#fff1f0;color:var(--red);border:1px solid #ffd0cc}.grid{display:grid;gap:12px}.kpis{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:0 10px 28px rgba(27,39,66,.06)}.kpi span{display:block;color:var(--muted);font-size:12px}.kpi b{display:block;margin-top:8px;font-size:24px}.toolbar{display:grid;grid-template-columns:1fr 150px 150px 160px auto;gap:8px;margin-bottom:12px}.field{width:100%;border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px;outline:none}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px;background:#fff}table{width:100%;border-collapse:collapse;min-width:980px}th,td{border-bottom:1px solid var(--line);padding:9px;text-align:left;vertical-align:middle}th{position:sticky;top:0;background:#fbfcff;font-size:12px;color:#576174}td.money{text-align:right;font-variant-numeric:tabular-nums}.cell{width:100%;border:1px solid transparent;background:transparent;border-radius:8px;padding:7px}.cell:focus{background:#fff;border-color:var(--blue)}.status{border-radius:999px;padding:5px 8px;font-size:12px;font-weight:800;display:inline-block;white-space:nowrap}.s0{background:#eaf7ef;color:#11733d}.s1{background:#fff7d6;color:#8a6100}.s2{background:#edf1f7;color:#596579}.sync{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.sync .wide{grid-column:1/-1}.note{color:var(--muted);font-size:12px;line-height:1.6}.toast{position:fixed;right:18px;bottom:18px;background:#172033;color:#fff;padding:11px 13px;border-radius:10px;opacity:0;transform:translateY(12px);transition:.2s}.toast.show{opacity:1;transform:none}@media(max-width:760px){.top{display:block}.actions{justify-content:flex-start;margin-top:12px}.toolbar,.sync{grid-template-columns:1fr}.app{padding:14px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <div><h1>账单管理</h1><p>本页已发布到 GitHub Pages，支持本地保存和 GitHub 自动同步。</p></div>
+    <div class="actions">
+      <button class="btn green" onclick="addRow()">新增账单</button>
+      <button class="btn blue" onclick="pushCloud(true)">上传云端</button>
+      <button class="btn secondary" onclick="pullCloud(true)">拉取云端</button>
+      <button class="btn secondary" onclick="exportJson()">导出JSON</button>
+      <label class="btn secondary">导入JSON<input type="file" accept=".json" hidden onchange="importJson(this.files[0])"></label>
+    </div>
+  </div>
+  <div class="grid kpis" id="kpis"></div>
+  <div class="card">
+    <div class="toolbar">
+      <input class="field" id="q" placeholder="搜索客户 / 项目 / 来源 / 备注" oninput="render()">
+      <select class="field" id="month" onchange="render()"><option value="all">全部月份</option></select>
+      <select class="field" id="status" onchange="render()"><option value="all">全部状态</option><option>进行中</option><option>审核中/未支付尾款</option><option>已完成</option></select>
+      <select class="field" id="source" onchange="render()"><option value="all">全部来源</option></select>
+      <button class="btn secondary" onclick="clearFilters()">清空</button>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>状态</th><th>接单</th><th>完成</th><th>来源</th><th>客户</th><th>项目</th><th>单价</th><th>已收</th><th>未收</th><th>备注</th><th>操作</th></tr></thead><tbody id="body"></tbody></table></div>
+  </div>
+  <div class="card" style="margin-top:14px">
+    <h3 style="margin:0 0 10px">GitHub 云同步</h3>
+    <div class="sync">
+      <input class="field" id="owner" placeholder="GitHub 用户/组织">
+      <input class="field" id="repo" placeholder="仓库名">
+      <input class="field" id="branch" placeholder="分支" value="main">
+      <input class="field" id="path" placeholder="数据路径" value="billing-book/data/billing-data.json">
+      <input class="field wide" id="token" type="password" placeholder="Fine-grained token，只保存在当前浏览器">
+    </div>
+    <div class="actions" style="justify-content:flex-start;margin-top:10px">
+      <button class="btn green" onclick="saveCfg()">保存同步配置</button>
+      <button class="btn secondary" onclick="localStorage.removeItem(CFG);loadCfg();toast('已清除配置')">清除配置</button>
+    </div>
+    <p class="note" id="syncNote">数据文件默认是 billing-book/data/billing-data.json。首次保存配置后，本地修改会延迟自动上传。</p>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const STORE='billing_manager_remote_v1',CFG='billing_manager_github_cfg_v1';
+let state={version:5,updatedAt:'',records:[],balances:[],expenses:[]},sha=null,timer=null,muted=false;
+const $=id=>document.getElementById(id),money=n=>'¥'+Math.round(Number(n)||0).toLocaleString('zh-CN'),uid=()=>('R'+Date.now().toString(36)+Math.random().toString(36).slice(2,7));
+function toast(s){const t=$('toast');t.textContent=s;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1500)}
+function norm(d){d=d||{};return{version:5,updatedAt:d.updatedAt||new Date().toISOString(),records:Array.isArray(d.records)?d.records.map(r=>({id:r.id||uid(),status:r.status||'进行中',month:r.month||String(r.orderDate||r.finishDate||'').slice(0,7),orderDate:r.orderDate||'',finishDate:r.finishDate||'',source:r.source||'其他',client:r.client||'',project:r.project||'',price:+r.price||0,paid:+r.paid||0,unpaid:+r.unpaid||Math.max(0,(+r.price||0)-(+r.paid||0)),note:r.note||'',image:r.image||'',images:r.images||[]})):[],balances:d.balances||[],expenses:d.expenses||[]}}
+function save(touch=true){if(touch)state.updatedAt=new Date().toISOString();localStorage.setItem(STORE,JSON.stringify(state));if(touch)queuePush()}
+function rows(){let q=$('q').value.trim().toLowerCase(),m=$('month').value,s=$('status').value,src=$('source').value;return state.records.filter(r=>(!q||[r.status,r.orderDate,r.finishDate,r.source,r.client,r.project,r.note].join(' ').toLowerCase().includes(q))&&(m==='all'||r.month===m)&&(s==='all'||r.status===s)&&(src==='all'||r.source===src))}
+function fill(){let oldM=$('month').value,oldS=$('source').value;let months=[...new Set(state.records.map(r=>r.month).filter(Boolean))].sort();let sources=[...new Set(state.records.map(r=>r.source||'其他'))].sort();$('month').innerHTML='<option value="all">全部月份</option>'+months.map(x=>`<option>${x}</option>`).join('');$('source').innerHTML='<option value="all">全部来源</option>'+sources.map(x=>`<option>${esc(x)}</option>`).join('');$('month').value=months.includes(oldM)?oldM:'all';$('source').value=sources.includes(oldS)?oldS:'all'}
+function render(){fill();let rs=rows(),sum=rs.reduce((a,r)=>(a.total+=+r.price||0,a.paid+=+r.paid||0,a.unpaid+=+r.unpaid||0,a),{total:0,paid:0,unpaid:0});$('kpis').innerHTML=[['账单数',rs.length+'条'],['应收',money(sum.total)],['已收',money(sum.paid)],['未收',money(sum.unpaid)]].map(x=>`<div class="card kpi"><span>${x[0]}</span><b>${x[1]}</b></div>`).join('');$('body').innerHTML=rs.map(r=>`<tr><td><select class="cell" onchange="edit('${r.id}','status',this.value)">${['进行中','审核中/未支付尾款','已完成'].map(s=>`<option ${s===r.status?'selected':''}>${s}</option>`).join('')}</select></td><td><input class="cell" type="date" value="${esc(r.orderDate)}" onchange="edit('${r.id}','orderDate',this.value)"></td><td><input class="cell" type="date" value="${esc(r.finishDate)}" onchange="edit('${r.id}','finishDate',this.value)"></td><td><input class="cell" value="${esc(r.source)}" oninput="edit('${r.id}','source',this.value)"></td><td><input class="cell" value="${esc(r.client)}" oninput="edit('${r.id}','client',this.value)"></td><td><input class="cell" value="${esc(r.project)}" oninput="edit('${r.id}','project',this.value)"></td><td class="money"><input class="cell" type="number" value="${+r.price||0}" oninput="edit('${r.id}','price',this.value,true)"></td><td class="money"><input class="cell" type="number" value="${+r.paid||0}" oninput="edit('${r.id}','paid',this.value,true)"></td><td class="money">${money(r.unpaid)}</td><td><input class="cell" value="${esc(r.note)}" oninput="edit('${r.id}','note',this.value)"></td><td><button class="btn red" onclick="delRow('${r.id}')">删</button></td></tr>`).join('')||'<tr><td colspan="11" style="text-align:center;color:#6b7485;padding:28px">暂无记录</td></tr>'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function edit(id,k,v,n=false){let r=state.records.find(x=>x.id===id);if(!r)return;r[k]=n?(+v||0):v;if(['price','paid'].includes(k))r.unpaid=Math.max(0,(+r.price||0)-(+r.paid||0));r.month=String(r.orderDate||r.finishDate||'').slice(0,7);save();render()}
+function addRow(){let d=new Date().toISOString().slice(0,10);state.records.unshift({id:uid(),status:'进行中',month:d.slice(0,7),orderDate:d,finishDate:d,source:'小红书',client:'',project:'',price:0,paid:0,unpaid:0,note:'',image:'',images:[]});save();render();toast('已新增')}
+function delRow(id){if(!confirm('删除这条账单？'))return;state.records=state.records.filter(r=>r.id!==id);save();render()}
+function clearFilters(){$('q').value='';$('month').value=$('status').value=$('source').value='all';render()}
+function exportJson(){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(state,null,2)],{type:'application/json'}));a.download='账单管理_完整备份.json';a.click()}
+async function importJson(f){if(!f)return;state=norm(JSON.parse(await f.text()));save();render();toast('已导入')}
+function cfg(){return JSON.parse(localStorage.getItem(CFG)||'{}')}function loadCfg(){let c=cfg();['owner','repo','branch','path','token'].forEach(id=>$(id).value=c[id]||($(id).value||''))}
+function saveCfg(){let c={owner:$('owner').value.trim(),repo:$('repo').value.trim(),branch:$('branch').value.trim()||'main',path:$('path').value.trim()||'billing-book/data/billing-data.json',token:$('token').value.trim()};localStorage.setItem(CFG,JSON.stringify(c));toast('配置已保存');pullCloud(false)}
+function ghUrl(c){return`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${encodeURIComponent(c.path).replace(/%2F/g,'/')}`}
+function ghHeaders(c){return{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28',Authorization:'Bearer '+c.token}}
+function b64e(s){return btoa(unescape(encodeURIComponent(s)))}function b64d(s){return decodeURIComponent(escape(atob(String(s).replace(/\s/g,''))))}
+async function pullCloud(manual){let c=cfg();if(!c.owner||!c.repo||!c.token)return manual&&toast('先保存同步配置');let r=await fetch(ghUrl(c)+'?ref='+encodeURIComponent(c.branch),{headers:ghHeaders(c)});if(r.status===404)return manual&&toast('云端文件不存在');if(!r.ok)return toast('拉取失败');let j=await r.json();sha=j.sha;let remote=norm(JSON.parse(b64d(j.content)));if(Date.parse(remote.updatedAt||0)>Date.parse(state.updatedAt||0)||manual){muted=true;state=remote;save(false);muted=false;render();toast('已拉取云端')}}
+async function pushCloud(manual){let c=cfg();if(!c.owner||!c.repo||!c.token)return manual&&toast('先保存同步配置');let body={message:'sync billing data',branch:c.branch,content:b64e(JSON.stringify(state,null,2))};if(sha)body.sha=sha;let r=await fetch(ghUrl(c),{method:'PUT',headers:{...ghHeaders(c),'Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok){toast('上传失败');return}let j=await r.json();sha=j.content&&j.content.sha;toast('已上传云端')}
+function queuePush(){if(muted)return;clearTimeout(timer);timer=setTimeout(()=>pushCloud(false),2500)}
+(async function boot(){loadCfg();try{let raw=localStorage.getItem(STORE);if(raw)state=norm(JSON.parse(raw));else{let r=await fetch('data/billing-data.json?'+Date.now(),{cache:'no-store'});state=norm(await r.json());save(false)}}catch(e){state=norm({records:[]})}render();pullCloud(false)})();
+</script>
+</body>
+</html>

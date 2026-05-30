@@ -1,8 +1,8 @@
 {
   "version": 4,
   "appVersion": "v.004",
-  "exportedAt": "2026-05-29T11:11:50.492Z",
-  "total": 121,
+  "exportedAt": "2026-05-30T09:46:57.128Z",
+  "total": 124,
   "categoryOrder": [
     "文本提示词",
     "创意提示词",
@@ -394,6 +394,23 @@
     },
     {
       "order": 21,
+      "id": "custom_1780134410169",
+      "type": "prompt",
+      "title": "长图创意·上传文档",
+      "displayTitle": "长图创意·上传文档",
+      "category": "创意提示词",
+      "subcategory": "长图设计",
+      "icon": "创",
+      "color": "#f97316",
+      "prompt": "我将上传【1张风格参考图】和【1份文档】。请你根据参考图的视觉调性、版式逻辑、创意表达和设计语言，结合文档中的全部文字内容，为我生成一套“系列图AI生图提示词”。\n\n其他要求：\n\n要求如下：\n1. 你需要先分析参考图，但只能提炼其“风格调性、配色逻辑、排版方式、创意形式、视觉元素、层级关系、画面节奏”，不能照搬参考图中的具体内容、文案、元素位置和主体内容。\n\n2. 你必须完整读取并保留文档中的所有设计文字内容，不允许删减、遗漏、压缩、改写文档文字。只能根据版式需要重新分配这些文字在不同图片中的位置与层级。\n\n3. 请将整份文档内容规划为一组多张9:16竖版系列图。每张图都必须是完整画面，同时整体看起来要像“同一张长图连续截取出的多张完整切片”：\n- 多张图风格统一；\n- 背景、色调、视觉节奏连续；\n- 每张图有独立主题与完整构图；\n- 图与图之间有延续关系，像同一套视觉系统中的连续切片；\n- 不允许风格割裂或每张图像完全不同的海报。\n\n4. 如果文档内容较多，请优先增加图片张数，不允许因为版面不足而删减文字。\n\n5. 每张图都要适合AI图片工具生成，要求：\n- 比例统一为9:16；\n- 画面清晰、高级、商业感强；\n- 文字层级明确，主标题、副标题、正文、重点信息清晰区分；\n- 画面干净、完整、可落地；\n- 不要有明显AI感；\n- 不要出现文字乱码、缺字、错别字、变形字、排版混乱、元素拥挤、背景脏乱、白斑、噪点、压缩痕迹、画质模糊。\n\n请按以下结构输出：\n\n【一、参考图风格解析】\n简要总结参考图的风格关键词、配色特征、排版特征、视觉元素和创意表达方式。\n\n【二、整套系列图设计思路】\n说明整套图的统一视觉方向、连续长图感的建立方式、主色调、背景设计、版式逻辑、图文节奏。\n\n【三、分图内容规划】\n将文档中的全部文字内容，合理分配到第1张、第2张、第3张……中，确保不遗漏、不删减。\n\n【四、总系列生图总控提示词】\n请输出1段可直接用于AI工具的“总控生图提示词”，用于统一定义整套系列图的风格、配色、版式、连续关系、质量要求和多图输出要求。\n\n【五、每张图的独立完整生图提示词】\n请分别输出“第1张提示词、第2张提示词、第3张提示词……”\n每张提示词都必须完整、独立、可直接复制使用，且必须包含：\n- 本张图片主题\n- 比例9:16\n- 参考风格延续说明\n- 背景设计\n- 主视觉元素\n- 文字排版结构\n- 本张必须放入的完整文字内容\n- 字体气质建议\n- 画面质感与光影\n- 构图方式\n- 与前后图片的连续关系\n- 高清、商业海报级、干净、无明显AI感等质量要求\n\n最终目标：\n不是让你直接生成图片，而是让你输出一套“可直接用于AI生图工具执行”的系列图提示词，包含1份总控提示词和全部分图独立提示词。",
+      "refImages": [],
+      "sourceSheet": "本地新增",
+      "sourceCell": "手动新增",
+      "custom": true,
+      "favorite": false
+    },
+    {
+      "order": 22,
       "id": "wf004",
       "type": "workflow",
       "title": "主视觉拆分",
@@ -432,7 +449,7 @@
       "favorite": false
     },
     {
-      "order": 22,
+      "order": 23,
       "id": "wf005",
       "type": "workflow",
       "title": "海报元素拆分",
@@ -466,7 +483,7 @@
       "favorite": false
     },
     {
-      "order": 23,
+      "order": 24,
       "id": "wf002",
       "type": "workflow",
       "title": "组合图拆分",
@@ -495,7 +512,7 @@
       "favorite": false
     },
     {
-      "order": 24,
+      "order": 25,
       "id": "wf006",
       "type": "workflow",
       "title": "包装拆分",
@@ -519,7 +536,7 @@
       "favorite": false
     },
     {
-      "order": 25,
+      "order": 26,
       "id": "wf001",
       "type": "workflow",
       "title": "美陈拆分",
@@ -568,7 +585,7 @@
       "favorite": false
     },
     {
-      "order": 26,
+      "order": 27,
       "id": "wf003",
       "type": "workflow",
       "title": "美陈设计-拆分",
@@ -612,7 +629,7 @@
       "favorite": false
     },
     {
-      "order": 27,
+      "order": 28,
       "id": "p061",
       "type": "prompt",
       "title": "【美陈区】 · 平面设计图转效果图",
@@ -629,7 +646,7 @@
       "favorite": false
     },
     {
-      "order": 28,
+      "order": 29,
       "id": "p026",
       "type": "prompt",
       "title": "效果图改为设计稿",
@@ -646,7 +663,7 @@
       "favorite": false
     },
     {
-      "order": 29,
+      "order": 30,
       "id": "p063",
       "type": "prompt",
       "title": "【美陈区】 · Agent批量处理多图 · 平面设计图转矢量图",
@@ -663,7 +680,7 @@
       "favorite": false
     },
     {
-      "order": 30,
+      "order": 31,
       "id": "p062",
       "type": "prompt",
       "title": "【美陈区】 · 平面设计图转矢量图",
@@ -680,7 +697,7 @@
       "favorite": false
     },
     {
-      "order": 31,
+      "order": 32,
       "id": "p011",
       "type": "prompt",
       "title": "【修复】修复素材图片",
@@ -697,7 +714,7 @@
       "favorite": false
     },
     {
-      "order": 32,
+      "order": 33,
       "id": "p013",
       "type": "prompt",
       "title": "【修复】修复素材图片 · Agent批量修复",
@@ -714,7 +731,7 @@
       "favorite": false
     },
     {
-      "order": 33,
+      "order": 34,
       "id": "p009",
       "type": "prompt",
       "title": "【修复】去除文字后修复底图 · 去残影与伪影",
@@ -731,7 +748,7 @@
       "favorite": false
     },
     {
-      "order": 34,
+      "order": 35,
       "id": "p007",
       "type": "prompt",
       "title": "【修复】 · 高清修复切片图",
@@ -748,7 +765,7 @@
       "favorite": false
     },
     {
-      "order": 35,
+      "order": 36,
       "id": "p008",
       "type": "prompt",
       "title": "【修复】 · 批量Agent修复 · 高清修复切片图",
@@ -765,7 +782,7 @@
       "favorite": false
     },
     {
-      "order": 36,
+      "order": 37,
       "id": "p057",
       "type": "prompt",
       "title": "重绘【背景】",
@@ -782,7 +799,7 @@
       "favorite": false
     },
     {
-      "order": 37,
+      "order": 38,
       "id": "p086",
       "type": "prompt",
       "title": "提示词 · 提供创意方案",
@@ -799,7 +816,7 @@
       "favorite": false
     },
     {
-      "order": 38,
+      "order": 39,
       "id": "p078",
       "type": "prompt",
       "title": "创意场景 · 垫图-产品",
@@ -816,7 +833,7 @@
       "favorite": false
     },
     {
-      "order": 39,
+      "order": 40,
       "id": "p085",
       "type": "prompt",
       "title": "卖点优化配图 （ 1.卖点图+2.风格图）",
@@ -833,7 +850,7 @@
       "favorite": false
     },
     {
-      "order": 40,
+      "order": 41,
       "id": "p082",
       "type": "prompt",
       "title": "锁图+场景合成 · 1.主体+2.蒙版+3.创意",
@@ -850,7 +867,7 @@
       "favorite": false
     },
     {
-      "order": 41,
+      "order": 42,
       "id": "p079",
       "type": "prompt",
       "title": "锁图+场景合成 ·（1.风格图+2.产品图+3.蒙版图）",
@@ -867,7 +884,7 @@
       "favorite": false
     },
     {
-      "order": 42,
+      "order": 43,
       "id": "p090",
       "type": "prompt",
       "title": "完美溶图 · 添加光影",
@@ -884,7 +901,7 @@
       "favorite": false
     },
     {
-      "order": 43,
+      "order": 44,
       "id": "p089",
       "type": "prompt",
       "title": "局部替换 · （仅替换壁纸）",
@@ -901,7 +918,7 @@
       "favorite": false
     },
     {
-      "order": 44,
+      "order": 45,
       "id": "p091",
       "type": "prompt",
       "title": "更换壁纸 · （整体不变，替换壁纸）",
@@ -918,7 +935,7 @@
       "favorite": false
     },
     {
-      "order": 45,
+      "order": 46,
       "id": "p087",
       "type": "prompt",
       "title": "主体替换 · （图1主体替换图2）",
@@ -935,7 +952,7 @@
       "favorite": false
     },
     {
-      "order": 46,
+      "order": 47,
       "id": "p092",
       "type": "prompt",
       "title": "详情页·方案提示词 · （GPT）",
@@ -952,7 +969,7 @@
       "favorite": false
     },
     {
-      "order": 47,
+      "order": 48,
       "id": "p093",
       "type": "prompt",
       "title": "详情页设计 · （GPT直出多张）",
@@ -969,7 +986,7 @@
       "favorite": false
     },
     {
-      "order": 48,
+      "order": 49,
       "id": "custom_1779423187249",
       "type": "prompt",
       "title": "长图设计·通用模板",
@@ -986,7 +1003,7 @@
       "favorite": false
     },
     {
-      "order": 49,
+      "order": 50,
       "id": "p132",
       "type": "prompt",
       "title": "海报直出·前置提示词 · 后面+入文案即可",
@@ -1003,7 +1020,7 @@
       "favorite": false
     },
     {
-      "order": 50,
+      "order": 51,
       "id": "p129",
       "type": "prompt",
       "title": "【生图】 · 多字排版·层次感设计",
@@ -1020,7 +1037,7 @@
       "favorite": false
     },
     {
-      "order": 51,
+      "order": 52,
       "id": "p010",
       "type": "prompt",
       "title": "【其他】 · 极简立体城市区位示意图",
@@ -1037,7 +1054,7 @@
       "favorite": false
     },
     {
-      "order": 52,
+      "order": 53,
       "id": "p134",
       "type": "prompt",
       "title": "【生图】 · 长图直出·前置提示词 · 后面+入文案即可",
@@ -1054,7 +1071,7 @@
       "favorite": false
     },
     {
-      "order": 53,
+      "order": 54,
       "id": "custom_1778763731574",
       "type": "prompt",
       "title": "GPT·标题设计·垫图",
@@ -1071,7 +1088,7 @@
       "favorite": false
     },
     {
-      "order": 54,
+      "order": 55,
       "id": "custom_1778763906050",
       "type": "prompt",
       "title": "GPT·标题设计",
@@ -1088,7 +1105,7 @@
       "favorite": false
     },
     {
-      "order": 55,
+      "order": 56,
       "id": "custom_1778810823387",
       "type": "prompt",
       "title": "生图·小红书封面",
@@ -1105,7 +1122,24 @@
       "favorite": false
     },
     {
-      "order": 56,
+      "order": 57,
+      "id": "custom_1780054530833",
+      "type": "prompt",
+      "title": "海报直出·风格垫图",
+      "displayTitle": "海报直出·风格垫图",
+      "category": "生图-海报类",
+      "subcategory": "排版海报",
+      "icon": "海",
+      "color": "#eab308",
+      "prompt": "参考图片风格创意/调性，设计一张全新的符合新主题的商业海报，版面层次强；\n\n- 保留参考图的风格精髓，但不能变成对参考图的简单复制；\n- 如我未特别说明，默认输出为高完成度、高审美、清晰、专业、有设计感的成品级画面。\n- 设计要有创意，设计版面高级，文字有层次，整体保持美学视觉冲击力和专业感。\n- 文本层次清晰，配色协调统一;\n- -减少高频细节与碎片化纹理，整体保持干净、克制、统一的商业视觉风格。使用大面积纯净色块与留白，避免复杂肌理、随机颗粒、杂乱高光、脏污渐变和密集装饰元素。所有边缘保持清晰锐利，渐变平滑自然，无白斑、无噪点、无涂抹感、无过度锐化。整体光影柔和均匀，层次简洁，避免AI生成常见的细碎纹理与脏乱细节。画面保持高级、通透、干净、现代的品牌海报质感。\n\n【文案内容】：（不要删减/增加文案）",
+      "refImages": [],
+      "sourceSheet": "本地新增",
+      "sourceCell": "手动新增",
+      "custom": true,
+      "favorite": false
+    },
+    {
+      "order": 58,
       "id": "p127",
       "type": "prompt",
       "title": "【策划】主KV·创意策划 · 主题+自由创意设计",
@@ -1122,7 +1156,7 @@
       "favorite": false
     },
     {
-      "order": 57,
+      "order": 59,
       "id": "p124",
       "type": "prompt",
       "title": "卖点配图 · 根据卖点进行创意设计",
@@ -1139,7 +1173,7 @@
       "favorite": false
     },
     {
-      "order": 58,
+      "order": 60,
       "id": "p125",
       "type": "prompt",
       "title": "主KV·创意策划 · 风格垫图+KV创意设计",
@@ -1156,7 +1190,7 @@
       "favorite": false
     },
     {
-      "order": 59,
+      "order": 61,
       "id": "p126",
       "type": "prompt",
       "title": "摊位布置 · 主题+创意设计",
@@ -1173,7 +1207,7 @@
       "favorite": false
     },
     {
-      "order": 60,
+      "order": 62,
       "id": "p130",
       "type": "prompt",
       "title": "美陈布置·风格垫图 · 主视觉垫图+创意设计",
@@ -1190,7 +1224,7 @@
       "favorite": false
     },
     {
-      "order": 61,
+      "order": 63,
       "id": "p131",
       "type": "prompt",
       "title": "美陈布置·主题创意 · 主题+创意设计",
@@ -1207,7 +1241,7 @@
       "favorite": false
     },
     {
-      "order": 62,
+      "order": 64,
       "id": "p107",
       "type": "prompt",
       "title": "单项·通用提示词",
@@ -1224,7 +1258,7 @@
       "favorite": false
     },
     {
-      "order": 63,
+      "order": 65,
       "id": "p119",
       "type": "prompt",
       "title": "单项·主舞台",
@@ -1241,7 +1275,7 @@
       "favorite": false
     },
     {
-      "order": 64,
+      "order": 66,
       "id": "p111",
       "type": "prompt",
       "title": "拍照手拿牌",
@@ -1258,7 +1292,7 @@
       "favorite": false
     },
     {
-      "order": 65,
+      "order": 67,
       "id": "p117",
       "type": "prompt",
       "title": "拍照框",
@@ -1275,7 +1309,7 @@
       "favorite": false
     },
     {
-      "order": 66,
+      "order": 68,
       "id": "p112",
       "type": "prompt",
       "title": "拱门",
@@ -1292,7 +1326,7 @@
       "favorite": false
     },
     {
-      "order": 67,
+      "order": 69,
       "id": "p108",
       "type": "prompt",
       "title": "指示牌",
@@ -1309,7 +1343,7 @@
       "favorite": false
     },
     {
-      "order": 68,
+      "order": 70,
       "id": "p123",
       "type": "prompt",
       "title": "游戏互动区",
@@ -1326,7 +1360,7 @@
       "favorite": false
     },
     {
-      "order": 69,
+      "order": 71,
       "id": "p110",
       "type": "prompt",
       "title": "【生图】物料延展 · 矢量·独立多图 · Agent批量",
@@ -1343,7 +1377,7 @@
       "favorite": false
     },
     {
-      "order": 70,
+      "order": 72,
       "id": "p105",
       "type": "prompt",
       "title": "【生图】物料延展 · （效果图·合集）",
@@ -1360,7 +1394,7 @@
       "favorite": false
     },
     {
-      "order": 71,
+      "order": 73,
       "id": "p115",
       "type": "prompt",
       "title": "礼品手提袋",
@@ -1377,7 +1411,7 @@
       "favorite": false
     },
     {
-      "order": 72,
+      "order": 74,
       "id": "p114",
       "type": "prompt",
       "title": "签到区",
@@ -1394,7 +1428,7 @@
       "favorite": false
     },
     {
-      "order": 73,
+      "order": 75,
       "id": "p122",
       "type": "prompt",
       "title": "美陈",
@@ -1411,7 +1445,7 @@
       "favorite": false
     },
     {
-      "order": 74,
+      "order": 76,
       "id": "p120",
       "type": "prompt",
       "title": "邀请函海报",
@@ -1428,7 +1462,7 @@
       "favorite": false
     },
     {
-      "order": 75,
+      "order": 77,
       "id": "custom_1779605012603",
       "type": "prompt",
       "title": "GPT·印刷制品延展·批量",
@@ -1445,7 +1479,7 @@
       "favorite": false
     },
     {
-      "order": 76,
+      "order": 78,
       "id": "custom_1779605082489",
       "type": "prompt",
       "title": "GPT·美陈组合效果图·批量",
@@ -1462,7 +1496,7 @@
       "favorite": false
     },
     {
-      "order": 77,
+      "order": 79,
       "id": "custom_1779605762324",
       "type": "prompt",
       "title": "GPT·印刷制品效果图·批量",
@@ -1479,7 +1513,7 @@
       "favorite": false
     },
     {
-      "order": 78,
+      "order": 80,
       "id": "p099",
       "type": "prompt",
       "title": "标题字设计方案 · （GPT效果更好）",
@@ -1496,7 +1530,7 @@
       "favorite": false
     },
     {
-      "order": 79,
+      "order": 81,
       "id": "p098",
       "type": "prompt",
       "title": "标题字设计 · （GPT/即梦）",
@@ -1513,7 +1547,7 @@
       "favorite": false
     },
     {
-      "order": 80,
+      "order": 82,
       "id": "p094",
       "type": "prompt",
       "title": "【生图】 · 海报生图提示词 · （banana）",
@@ -1530,7 +1564,7 @@
       "favorite": false
     },
     {
-      "order": 81,
+      "order": 83,
       "id": "p096",
       "type": "prompt",
       "title": "【生图】 · 表格系列美化 · （垫风格图+表格图）",
@@ -1547,7 +1581,7 @@
       "favorite": false
     },
     {
-      "order": 82,
+      "order": 84,
       "id": "p100",
       "type": "prompt",
       "title": "【生图】 · 正文模块排版方案 · （banana）",
@@ -1564,7 +1598,7 @@
       "favorite": false
     },
     {
-      "order": 83,
+      "order": 85,
       "id": "p101",
       "type": "prompt",
       "title": "正文模块排版方案 · （GPT效果更好）",
@@ -1581,7 +1615,7 @@
       "favorite": false
     },
     {
-      "order": 84,
+      "order": 86,
       "id": "p075",
       "type": "prompt",
       "title": "【价签数据整理】图片+表格 · GPT",
@@ -1598,7 +1632,7 @@
       "favorite": false
     },
     {
-      "order": 85,
+      "order": 87,
       "id": "custom_1778831879893",
       "type": "prompt",
       "title": "【价签数据整理】表格套模板·GPT",
@@ -1615,7 +1649,7 @@
       "favorite": false
     },
     {
-      "order": 86,
+      "order": 88,
       "id": "p073",
       "type": "prompt",
       "title": "【价签数据整理】 · 白色款标签 · 豆包",
@@ -1632,7 +1666,7 @@
       "favorite": false
     },
     {
-      "order": 87,
+      "order": 89,
       "id": "p074",
       "type": "prompt",
       "title": "【价签数据整理】 · 黑色款标签 · 豆包",
@@ -1649,7 +1683,7 @@
       "favorite": false
     },
     {
-      "order": 88,
+      "order": 90,
       "id": "p076",
       "type": "prompt",
       "title": "核对数据 · 豆包/GPT",
@@ -1666,7 +1700,7 @@
       "favorite": false
     },
     {
-      "order": 89,
+      "order": 91,
       "id": "custom_1778833415101",
       "type": "prompt",
       "title": "GPT·标签数据核对",
@@ -1683,7 +1717,7 @@
       "favorite": false
     },
     {
-      "order": 90,
+      "order": 92,
       "id": "custom_1779697062698",
       "type": "prompt",
       "title": "SKU系列图生成",
@@ -1700,7 +1734,7 @@
       "favorite": false
     },
     {
-      "order": 91,
+      "order": 93,
       "id": "p020",
       "type": "prompt",
       "title": "【其他】Skills",
@@ -1717,7 +1751,7 @@
       "favorite": false
     },
     {
-      "order": 92,
+      "order": 94,
       "id": "custom_1779011040567",
       "type": "prompt",
       "title": "黑白矢量图标·提取转化",
@@ -1734,7 +1768,7 @@
       "favorite": false
     },
     {
-      "order": 93,
+      "order": 95,
       "id": "custom_1778913289927",
       "type": "prompt",
       "title": "矢量化转绘·标题字",
@@ -1751,7 +1785,7 @@
       "favorite": false
     },
     {
-      "order": 94,
+      "order": 96,
       "id": "custom_1778914493610",
       "type": "prompt",
       "title": "矢量化转绘·简化画面",
@@ -1768,7 +1802,7 @@
       "favorite": false
     },
     {
-      "order": 95,
+      "order": 97,
       "id": "custom_1778914625952",
       "type": "prompt",
       "title": "风格转绘·图1转图2风格·矢量化",
@@ -1785,7 +1819,7 @@
       "favorite": false
     },
     {
-      "order": 96,
+      "order": 98,
       "id": "custom_1779445834778",
       "type": "prompt",
       "title": "原图·设计优化",
@@ -1802,7 +1836,7 @@
       "favorite": false
     },
     {
-      "order": 97,
+      "order": 99,
       "id": "custom_1780045608178",
       "type": "prompt",
       "title": "设计文件核对·文案核对",
@@ -1819,7 +1853,7 @@
       "favorite": false
     },
     {
-      "order": 98,
+      "order": 100,
       "id": "custom_1778674344990",
       "type": "prompt",
       "title": "高清修复·平滑画面",
@@ -1836,7 +1870,7 @@
       "favorite": false
     },
     {
-      "order": 99,
+      "order": 101,
       "id": "p014",
       "type": "prompt",
       "title": "【提升清晰度】 · 单张提升优化",
@@ -1853,7 +1887,7 @@
       "favorite": false
     },
     {
-      "order": 100,
+      "order": 102,
       "id": "p015",
       "type": "prompt",
       "title": "【提升清晰度】 · Agent批量高清4K",
@@ -1870,7 +1904,7 @@
       "favorite": false
     },
     {
-      "order": 101,
+      "order": 103,
       "id": "custom_1778813653360",
       "type": "prompt",
       "title": "flowith·批量智能体",
@@ -1887,7 +1921,7 @@
       "favorite": false
     },
     {
-      "order": 102,
+      "order": 104,
       "id": "custom_1778990571949",
       "type": "prompt",
       "title": "去掉文字·保留元素",
@@ -1904,7 +1938,7 @@
       "favorite": false
     },
     {
-      "order": 103,
+      "order": 105,
       "id": "custom_1779004104817",
       "type": "prompt",
       "title": "去掉元素·保留背景",
@@ -1921,7 +1955,7 @@
       "favorite": false
     },
     {
-      "order": 104,
+      "order": 106,
       "id": "custom_1779442242325",
       "type": "prompt",
       "title": "高清修复",
@@ -1938,7 +1972,7 @@
       "favorite": false
     },
     {
-      "order": 105,
+      "order": 107,
       "id": "custom_1780033433720",
       "type": "prompt",
       "title": "提取icon·还原 +黑白矢量2张图",
@@ -1955,7 +1989,7 @@
       "favorite": false
     },
     {
-      "order": 106,
+      "order": 108,
       "id": "custom_1780047386410",
       "type": "prompt",
       "title": "切片修复·批量",
@@ -1972,7 +2006,7 @@
       "favorite": false
     },
     {
-      "order": 107,
+      "order": 109,
       "id": "p027",
       "type": "prompt",
       "title": "【拆分】GPT · （拆为psd文件，复杂版）",
@@ -1989,7 +2023,7 @@
       "favorite": false
     },
     {
-      "order": 108,
+      "order": 110,
       "id": "p023",
       "type": "prompt",
       "title": "【拆分】GPT · （拆在一张图中）",
@@ -2006,7 +2040,7 @@
       "favorite": false
     },
     {
-      "order": 109,
+      "order": 111,
       "id": "p097",
       "type": "prompt",
       "title": "【拆分】Agent · 拆分海报为4张图 · （icon/背景/文本框/元素） · 即梦/banana",
@@ -2023,7 +2057,7 @@
       "favorite": false
     },
     {
-      "order": 110,
+      "order": 112,
       "id": "p058",
       "type": "prompt",
       "title": "【【拆分】GPT】 · Agent批量 · 美陈直接拆分",
@@ -2040,7 +2074,7 @@
       "favorite": false
     },
     {
-      "order": 111,
+      "order": 113,
       "id": "p056",
       "type": "prompt",
       "title": "【【拆分】GPT】 · Agent批量 · 拆分三张图 · 结构/矢量/配色",
@@ -2057,7 +2091,7 @@
       "favorite": false
     },
     {
-      "order": 112,
+      "order": 114,
       "id": "p060",
       "type": "prompt",
       "title": "将物料合集拆分为单独图片",
@@ -2074,7 +2108,7 @@
       "favorite": false
     },
     {
-      "order": 113,
+      "order": 115,
       "id": "p021",
       "type": "prompt",
       "title": "单独提取【xx】元素",
@@ -2091,7 +2125,7 @@
       "favorite": false
     },
     {
-      "order": 114,
+      "order": 116,
       "id": "p102",
       "type": "prompt",
       "title": "icon · 提取并整理海报中的所有icon元素",
@@ -2108,7 +2142,7 @@
       "favorite": false
     },
     {
-      "order": 115,
+      "order": 117,
       "id": "p103",
       "type": "prompt",
       "title": "文本框 · 提取海报中的文本框/标题框结构",
@@ -2125,7 +2159,7 @@
       "favorite": false
     },
     {
-      "order": 116,
+      "order": 118,
       "id": "p104",
       "type": "prompt",
       "title": "背景 · 提取并修复海报背景",
@@ -2142,7 +2176,7 @@
       "favorite": false
     },
     {
-      "order": 117,
+      "order": 119,
       "id": "custom_1778745106592",
       "type": "prompt",
       "title": "GPT·海报拆分",
@@ -2159,7 +2193,7 @@
       "favorite": false
     },
     {
-      "order": 118,
+      "order": 120,
       "id": "custom_1778811469268",
       "type": "prompt",
       "title": "GPT·海报拆分·8图",
@@ -2176,7 +2210,7 @@
       "favorite": false
     },
     {
-      "order": 119,
+      "order": 121,
       "id": "custom_1778912903136",
       "type": "prompt",
       "title": "GPT·主视觉拆分",
@@ -2193,7 +2227,7 @@
       "favorite": false
     },
     {
-      "order": 120,
+      "order": 122,
       "id": "custom_1779325418743",
       "type": "prompt",
       "title": "GPT·拆分元素组",
@@ -2210,7 +2244,7 @@
       "favorite": false
     },
     {
-      "order": 121,
+      "order": 123,
       "id": "custom_1780047505707",
       "type": "prompt",
       "title": "图标提取·原图+黑白矢量",
@@ -2220,6 +2254,23 @@
       "icon": "拆",
       "color": "#ef4444",
       "prompt": "请基于我上传的图片，识别并提取画面中所有 icon、图标、符号类元素，只提取图标元素，不要提取背景、人物、标题文字、正文文字、按钮、装饰底纹、照片、边框或无关视觉元素。\n\n请最终生成两张独立的输出图：\n\n第一张：彩色重绘修复版 icon 素材图\n将图片中所有 icon 和图标进行重绘式还原，保持原图 icon 的设计风格、颜色关系、造型特征和视觉比例，但需要修复原图中模糊、破损、变形、缺失、结构错误、不清晰、边缘锯齿、压缩噪点等问题。\n每个 icon 必须是完整、清晰、闭合、可商用级别的独立素材元素，结构准确，边缘干净，线条顺滑，细节完整，不要出现残缺、错位、重影、脏边、杂色、AI 伪影或不合理结构。\n所有 icon 整齐排列在纯白色背景上，统一视觉大小，保持适当间距，网格化排版，方便后期单独抠图和使用。不要添加任何原图中不存在的新 icon，不要改变 icon 的核心造型含义。\n\n第二张：黑白矢量版 icon 素材图\n基于第一张中提取和修复后的所有 icon，生成对应的黑白矢量风格版本。\n所有 icon 只能使用纯黑色和纯白色，不允许出现灰色、渐变、阴影、彩色、纹理、发光、透明叠加或其他颜色。\n图标需要具有矢量感，线条干净，轮廓清晰，结构简洁准确，适合用于商用设计、印刷、网页、PPT、海报和品牌物料。\n所有黑白 icon 同样整齐排列在纯白背景上，保持统一尺寸、统一间距、统一视觉风格，方便后期单独使用。\n\n整体要求：\n\n1. 输出必须是两张独立图片，不要把彩色版和黑白版合在同一张图里。\n2. 不要保留原图背景，不要保留任何文字信息，不要保留无关装饰元素。\n3. 不要凭空增加图标，也不要遗漏原图中已有的 icon。\n4. 所有 icon 都要完整、清晰、可用，达到商用素材级质量。\n5. 画面为高清输出，干净利落，无水印，无边框，无多余说明文字。",
+      "refImages": [],
+      "sourceSheet": "本地新增",
+      "sourceCell": "手动新增",
+      "custom": true,
+      "favorite": false
+    },
+    {
+      "order": 124,
+      "id": "custom_1780107706819",
+      "type": "prompt",
+      "title": "提取背景·包含主体",
+      "displayTitle": "提取背景·包含主体",
+      "category": "拆分",
+      "subcategory": "单图拆分",
+      "icon": "拆",
+      "color": "#ef4444",
+      "prompt": "对上传图片进行局部清理与高清修复：\n-仅删除画面中的所有文字、数字、标题、副标题、说明文案、LOGO文字、文本框、标签框、按钮框、信息卡片，\n以及文本框/卡片内部的小配图、装饰元素、icon、符号、线条等；\n-保留原图主体元素、人物/产品/建筑/场景、背景结构、光影、色彩、构图、透视和空间关系不变，\n-不重新设计，不改变风格，不移动主体，不新增无关元素。\n-对删除区域进行自然背景补全，使纹理、渐变、材质、光影与周围环境无缝衔接。\n-提升画面清晰度至4K，增强细节与边缘质量，去除噪点、脏纹、白斑、压缩痕迹、模糊、残影和非内容性瑕疵，\n-画面平滑干净、连贯自然，输出商业级高清纯净背景图，最终画面需保留主体元素。",
       "refImages": [],
       "sourceSheet": "本地新增",
       "sourceCell": "手动新增",
@@ -2284,6 +2335,48 @@
         "sourceCell": "手动新增",
         "custom": true,
         "refImages": []
+      },
+      {
+        "id": "custom_1780054530833",
+        "title": "海报直出·风格垫图",
+        "displayTitle": "海报直出·风格垫图",
+        "prompt": "参考图片风格创意/调性，设计一张全新的符合新主题的商业海报，版面层次强；\n\n- 保留参考图的风格精髓，但不能变成对参考图的简单复制；\n- 如我未特别说明，默认输出为高完成度、高审美、清晰、专业、有设计感的成品级画面。\n- 设计要有创意，设计版面高级，文字有层次，整体保持美学视觉冲击力和专业感。\n- 文本层次清晰，配色协调统一;\n- -减少高频细节与碎片化纹理，整体保持干净、克制、统一的商业视觉风格。使用大面积纯净色块与留白，避免复杂肌理、随机颗粒、杂乱高光、脏污渐变和密集装饰元素。所有边缘保持清晰锐利，渐变平滑自然，无白斑、无噪点、无涂抹感、无过度锐化。整体光影柔和均匀，层次简洁，避免AI生成常见的细碎纹理与脏乱细节。画面保持高级、通透、干净、现代的品牌海报质感。\n\n【文案内容】：（不要删减/增加文案）",
+        "category": "生图-海报类",
+        "subcategory": "排版海报",
+        "icon": "海",
+        "color": "#eab308",
+        "sourceSheet": "本地新增",
+        "sourceCell": "手动新增",
+        "custom": true,
+        "refImages": []
+      },
+      {
+        "id": "custom_1780107706819",
+        "title": "提取背景·包含主体",
+        "displayTitle": "提取背景·包含主体",
+        "prompt": "对上传图片进行局部清理与高清修复：\n-仅删除画面中的所有文字、数字、标题、副标题、说明文案、LOGO文字、文本框、标签框、按钮框、信息卡片，\n以及文本框/卡片内部的小配图、装饰元素、icon、符号、线条等；\n-保留原图主体元素、人物/产品/建筑/场景、背景结构、光影、色彩、构图、透视和空间关系不变，\n-不重新设计，不改变风格，不移动主体，不新增无关元素。\n-对删除区域进行自然背景补全，使纹理、渐变、材质、光影与周围环境无缝衔接。\n-提升画面清晰度至4K，增强细节与边缘质量，去除噪点、脏纹、白斑、压缩痕迹、模糊、残影和非内容性瑕疵，\n-画面平滑干净、连贯自然，输出商业级高清纯净背景图，最终画面需保留主体元素。",
+        "category": "拆分",
+        "subcategory": "单图拆分",
+        "icon": "拆",
+        "color": "#ef4444",
+        "sourceSheet": "本地新增",
+        "sourceCell": "手动新增",
+        "custom": true,
+        "refImages": []
+      },
+      {
+        "id": "custom_1780134410169",
+        "title": "长图创意·上传文档",
+        "displayTitle": "长图创意·上传文档",
+        "prompt": "我将上传【1张风格参考图】和【1份文档】。请你根据参考图的视觉调性、版式逻辑、创意表达和设计语言，结合文档中的全部文字内容，为我生成一套“系列图AI生图提示词”。\n\n其他要求：\n\n要求如下：\n1. 你需要先分析参考图，但只能提炼其“风格调性、配色逻辑、排版方式、创意形式、视觉元素、层级关系、画面节奏”，不能照搬参考图中的具体内容、文案、元素位置和主体内容。\n\n2. 你必须完整读取并保留文档中的所有设计文字内容，不允许删减、遗漏、压缩、改写文档文字。只能根据版式需要重新分配这些文字在不同图片中的位置与层级。\n\n3. 请将整份文档内容规划为一组多张9:16竖版系列图。每张图都必须是完整画面，同时整体看起来要像“同一张长图连续截取出的多张完整切片”：\n- 多张图风格统一；\n- 背景、色调、视觉节奏连续；\n- 每张图有独立主题与完整构图；\n- 图与图之间有延续关系，像同一套视觉系统中的连续切片；\n- 不允许风格割裂或每张图像完全不同的海报。\n\n4. 如果文档内容较多，请优先增加图片张数，不允许因为版面不足而删减文字。\n\n5. 每张图都要适合AI图片工具生成，要求：\n- 比例统一为9:16；\n- 画面清晰、高级、商业感强；\n- 文字层级明确，主标题、副标题、正文、重点信息清晰区分；\n- 画面干净、完整、可落地；\n- 不要有明显AI感；\n- 不要出现文字乱码、缺字、错别字、变形字、排版混乱、元素拥挤、背景脏乱、白斑、噪点、压缩痕迹、画质模糊。\n\n请按以下结构输出：\n\n【一、参考图风格解析】\n简要总结参考图的风格关键词、配色特征、排版特征、视觉元素和创意表达方式。\n\n【二、整套系列图设计思路】\n说明整套图的统一视觉方向、连续长图感的建立方式、主色调、背景设计、版式逻辑、图文节奏。\n\n【三、分图内容规划】\n将文档中的全部文字内容，合理分配到第1张、第2张、第3张……中，确保不遗漏、不删减。\n\n【四、总系列生图总控提示词】\n请输出1段可直接用于AI工具的“总控生图提示词”，用于统一定义整套系列图的风格、配色、版式、连续关系、质量要求和多图输出要求。\n\n【五、每张图的独立完整生图提示词】\n请分别输出“第1张提示词、第2张提示词、第3张提示词……”\n每张提示词都必须完整、独立、可直接复制使用，且必须包含：\n- 本张图片主题\n- 比例9:16\n- 参考风格延续说明\n- 背景设计\n- 主视觉元素\n- 文字排版结构\n- 本张必须放入的完整文字内容\n- 字体气质建议\n- 画面质感与光影\n- 构图方式\n- 与前后图片的连续关系\n- 高清、商业海报级、干净、无明显AI感等质量要求\n\n最终目标：\n不是让你直接生成图片，而是让你输出一套“可直接用于AI生图工具执行”的系列图提示词，包含1份总控提示词和全部分图独立提示词。",
+        "category": "创意提示词",
+        "subcategory": "长图设计",
+        "icon": "创",
+        "color": "#f97316",
+        "sourceSheet": "本地新增",
+        "sourceCell": "手动新增",
+        "custom": true,
+        "refImages": []
       }
     ],
     "metaOverrides": {
@@ -2309,6 +2402,14 @@
       "拆分": {
         "icon": "拆",
         "color": "#ef4444"
+      },
+      "生图-海报类": {
+        "icon": "海",
+        "color": "#eab308"
+      },
+      "创意提示词": {
+        "icon": "创",
+        "color": "#f97316"
       }
     },
     "deletedIds": [],

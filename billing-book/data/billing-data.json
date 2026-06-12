@@ -1,7 +1,23 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-12T13:28:59.281Z",
+  "updatedAt": "2026-06-12T13:29:45.359Z",
   "records": [
+    {
+      "id": "Rmqayr1yk50xgp",
+      "status": "进行中",
+      "month": "2026-06",
+      "orderDate": "2026-06-12",
+      "finishDate": "2026-06-12",
+      "source": "小红书",
+      "client": "",
+      "project": "",
+      "image": "",
+      "images": [],
+      "price": 0,
+      "paid": 0,
+      "unpaid": 0,
+      "note": ""
+    },
     {
       "id": "Rmqayer2shpwne",
       "status": "已完成",

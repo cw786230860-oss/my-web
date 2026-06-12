@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-12T13:23:16.619Z",
+  "updatedAt": "2026-06-12T13:23:44.305Z",
   "records": [
     {
       "id": "Rmqayer2shpwne",
@@ -218,9 +218,9 @@
       "project": "详情+主图+挂带",
       "image": "",
       "images": [],
-      "price": 1700,
+      "price": 1800,
       "paid": 0,
-      "unpaid": 1700,
+      "unpaid": 1800,
       "note": "",
       "month": "2026-06"
     },

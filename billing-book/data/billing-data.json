@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-12T13:25:51.440Z",
+  "updatedAt": "2026-06-12T13:26:40.574Z",
   "records": [
     {
       "id": "Rmqayer2shpwne",
@@ -102,22 +102,6 @@
       "paid": 600,
       "unpaid": 0,
       "note": "",
-      "month": "2026-06"
-    },
-    {
-      "id": "Rmqayer2sepzza",
-      "status": "进行中",
-      "orderDate": "2026-06-10",
-      "finishDate": "2026-06-10",
-      "source": "小红书",
-      "client": "山山而川",
-      "project": "海报X1",
-      "image": "",
-      "images": [],
-      "price": 150,
-      "paid": 0,
-      "unpaid": 150,
-      "note": "月结",
       "month": "2026-06"
     },
     {
@@ -269,9 +253,9 @@
       "project": "详情+主图+挂带",
       "image": "",
       "images": [],
-      "price": 1700,
+      "price": 1800,
       "paid": 0,
-      "unpaid": 1,
+      "unpaid": 1800,
       "note": ""
     },
     {

@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-12T13:25:33.290Z",
+  "updatedAt": "2026-06-12T13:25:51.440Z",
   "records": [
     {
       "id": "Rmqayer2shpwne",
@@ -118,22 +118,6 @@
       "paid": 0,
       "unpaid": 150,
       "note": "月结",
-      "month": "2026-06"
-    },
-    {
-      "id": "Rmqayer2st3j2e",
-      "status": "进行中",
-      "orderDate": "2026-06-01",
-      "finishDate": "2026-06-07",
-      "source": "小红书",
-      "client": "方广",
-      "project": "详情+主图+挂带",
-      "image": "",
-      "images": [],
-      "price": 1800,
-      "paid": 0,
-      "unpaid": 1800,
-      "note": "",
       "month": "2026-06"
     },
     {
@@ -287,7 +271,7 @@
       "images": [],
       "price": 1700,
       "paid": 0,
-      "unpaid": 1700,
+      "unpaid": 1,
       "note": ""
     },
     {

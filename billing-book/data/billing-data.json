@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-12T13:26:40.574Z",
+  "updatedAt": "2026-06-12T13:26:52.689Z",
   "records": [
     {
       "id": "Rmqayer2shpwne",
@@ -103,22 +103,6 @@
       "unpaid": 0,
       "note": "",
       "month": "2026-06"
-    },
-    {
-      "id": "Rmqawavq4glkfo",
-      "status": "已完成",
-      "month": "2026-06",
-      "orderDate": "2026-06-10",
-      "finishDate": "2026-06-12",
-      "source": "小红书",
-      "client": "蔡先生",
-      "project": "海报X3+小程序",
-      "image": "",
-      "images": [],
-      "price": 750,
-      "paid": 750,
-      "unpaid": 0,
-      "note": ""
     },
     {
       "id": "Rmq84b6j19w403",

@@ -1,21 +1,21 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-12T13:29:45.359Z",
+  "updatedAt": "2026-06-12T13:30:04.885Z",
   "records": [
     {
       "id": "Rmqayr1yk50xgp",
       "status": "进行中",
       "month": "2026-06",
       "orderDate": "2026-06-12",
-      "finishDate": "2026-06-12",
+      "finishDate": "2026-06-13",
       "source": "小红书",
-      "client": "",
-      "project": "",
+      "client": "沫芯花艺",
+      "project": "手举牌X3",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 100,
       "paid": 0,
-      "unpaid": 0,
+      "unpaid": 100,
       "note": ""
     },
     {

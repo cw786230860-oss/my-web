@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-14T11:44:24.755Z",
+  "updatedAt": "2026-06-14T11:44:32.899Z",
   "records": [
     {
       "id": "Rmqawnqf9d10f5",
@@ -113,8 +113,8 @@
       "images": [],
       "price": 0,
       "paid": 0,
-      "unpaid": 100,
-      "note": ""
+      "unpaid": 0,
+      "note": "退单"
     },
     {
       "id": "Rmqawavq4glkfo",

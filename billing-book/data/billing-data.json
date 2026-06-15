@@ -1,7 +1,23 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-15T13:42:01.458Z",
+  "updatedAt": "2026-06-15T13:42:28.510Z",
   "records": [
+    {
+      "id": "Rmqf9ijtl4ts4a",
+      "status": "进行中",
+      "month": "2026-06",
+      "orderDate": "2026-06-15",
+      "finishDate": "2026-06-15",
+      "source": "小红书",
+      "client": "星王传媒",
+      "project": "全套物料",
+      "image": "",
+      "images": [],
+      "price": 2800,
+      "paid": 0,
+      "unpaid": 2800,
+      "note": ""
+    },
     {
       "id": "Rmqf9huvuzzzmf",
       "status": "进行中",
@@ -15,7 +31,7 @@
       "images": [],
       "price": 500,
       "paid": 0,
-      "unpaid": 0,
+      "unpaid": 500,
       "note": ""
     },
     {

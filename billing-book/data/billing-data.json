@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-15T13:41:46.900Z",
+  "updatedAt": "2026-06-15T13:42:01.458Z",
   "records": [
     {
       "id": "Rmqf9huvuzzzmf",
@@ -10,10 +10,10 @@
       "finishDate": "2026-06-15",
       "source": "小红书",
       "client": "风生水起",
-      "project": "",
+      "project": "易拉宝修改X6",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 500,
       "paid": 0,
       "unpaid": 0,
       "note": ""

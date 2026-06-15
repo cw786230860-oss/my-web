@@ -1,7 +1,23 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-15T07:34:10.411Z",
+  "updatedAt": "2026-06-15T07:34:30.285Z",
   "records": [
+    {
+      "id": "Rmqewdqikhyq3d",
+      "status": "进行中",
+      "month": "2026-06",
+      "orderDate": "2026-06-15",
+      "finishDate": "2026-06-15",
+      "source": "小红书",
+      "client": "QIAN",
+      "project": "",
+      "image": "",
+      "images": [],
+      "price": 0,
+      "paid": 0,
+      "unpaid": 0,
+      "note": ""
+    },
     {
       "id": "Rmqewd8awa3m40",
       "status": "进行中",
@@ -10,12 +26,12 @@
       "finishDate": "2026-06-15",
       "source": "小红书",
       "client": "风生水起",
-      "project": "",
+      "project": "易拉宝修改X6",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 500,
       "paid": 0,
-      "unpaid": 0,
+      "unpaid": 500,
       "note": ""
     },
     {

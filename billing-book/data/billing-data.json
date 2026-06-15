@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-15T07:34:39.480Z",
+  "updatedAt": "2026-06-15T07:35:08.716Z",
   "records": [
     {
       "id": "Rmqewdqikhyq3d",
@@ -9,14 +9,14 @@
       "orderDate": "2026-06-15",
       "finishDate": "2026-06-15",
       "source": "小红书",
-      "client": "星王chu'a",
-      "project": "",
+      "client": "星王传媒",
+      "project": "华润赛事-活动物料",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 2800,
       "paid": 0,
-      "unpaid": 0,
-      "note": ""
+      "unpaid": 2800,
+      "note": "项目结束45天结算"
     },
     {
       "id": "Rmqewd8awa3m40",

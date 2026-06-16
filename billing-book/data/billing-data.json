@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-16T13:05:39.532Z",
+  "updatedAt": "2026-06-16T13:05:50.222Z",
   "records": [
     {
       "id": "Rmqf9ijtl4ts4a",
@@ -20,7 +20,7 @@
     },
     {
       "id": "Rmqf9huvuzzzmf",
-      "status": "进行中",
+      "status": "审核中/未支付尾款",
       "month": "2026-06",
       "orderDate": "2026-06-15",
       "finishDate": "2026-06-15",

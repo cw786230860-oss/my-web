@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-16T12:58:44.045Z",
+  "updatedAt": "2026-06-16T12:59:37.521Z",
   "records": [
     {
       "id": "Rmqf9ijtl4ts4a",
@@ -78,8 +78,8 @@
       "image": "",
       "images": [],
       "price": 450,
-      "paid": 0,
-      "unpaid": 450,
+      "paid": 450,
+      "unpaid": 0,
       "note": ""
     },
     {

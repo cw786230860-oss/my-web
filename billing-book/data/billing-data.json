@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-16T13:02:46.281Z",
+  "updatedAt": "2026-06-16T13:03:40.401Z",
   "records": [
     {
       "id": "Rmqf9ijtl4ts4a",
@@ -560,7 +560,7 @@
       "price": 4000,
       "paid": 0,
       "unpaid": 4000,
-      "note": "20号工资支付（3.4月未支付）"
+      "note": "20号工资支付（5月未支付）"
     },
     {
       "id": "Rmp5fwtogxn5rw",
@@ -576,7 +576,7 @@
       "price": 4500,
       "paid": 0,
       "unpaid": 4500,
-      "note": "20号工资支付（3.4月未支付）"
+      "note": "20号工资支付（5月未支付）"
     },
     {
       "id": "Rmp5fj7flnlz4y",

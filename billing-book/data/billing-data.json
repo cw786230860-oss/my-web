@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-16T12:59:57.220Z",
+  "updatedAt": "2026-06-16T13:00:16.959Z",
   "records": [
     {
       "id": "Rmqf9ijtl4ts4a",
@@ -136,7 +136,7 @@
     },
     {
       "id": "Rmqawdtfd5mgh2",
-      "status": "进行中",
+      "status": "已完成",
       "month": "2026-06",
       "orderDate": "2026-06-12",
       "finishDate": "2026-06-13",
@@ -145,10 +145,10 @@
       "project": "手举牌X3",
       "image": "",
       "images": [],
-      "price": 100,
+      "price": 0,
       "paid": 0,
-      "unpaid": 100,
-      "note": ""
+      "unpaid": 0,
+      "note": "退单"
     },
     {
       "id": "Rmqawavq4glkfo",

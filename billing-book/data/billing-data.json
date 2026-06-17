@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T13:51:23.448Z",
+  "updatedAt": "2026-06-17T13:51:38.183Z",
   "records": [
     {
       "id": "Rmqi4q0m4o7qq3",
@@ -10,12 +10,12 @@
       "finishDate": "2026-06-17",
       "source": "小红书",
       "client": "风生水起",
-      "project": "bo",
+      "project": "玻璃贴X6",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 600,
       "paid": 0,
-      "unpaid": 0,
+      "unpaid": 600,
       "note": ""
     },
     {

@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T13:55:22.611Z",
+  "updatedAt": "2026-06-17T13:55:42.715Z",
   "records": [
     {
       "id": "Rmqi4v63z1c0mj",
@@ -10,13 +10,13 @@
       "finishDate": "2026-06-17",
       "source": "小红书",
       "client": "铁塔",
-      "project": "",
+      "project": "1900",
       "image": "",
       "images": [],
       "price": 0,
       "paid": 0,
       "unpaid": 0,
-      "note": ""
+      "note": "2026第一季度未结算账单"
     },
     {
       "id": "Rmqi4q0m4o7qq3",

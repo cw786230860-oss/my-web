@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T14:05:00.247Z",
+  "updatedAt": "2026-06-17T14:05:15.416Z",
   "records": [
     {
       "id": "Rmqi57n5bb4zrv",
@@ -9,8 +9,8 @@
       "orderDate": "2026-06-17",
       "finishDate": "2026-06-17",
       "source": "小红书",
-      "client": "",
-      "project": "",
+      "client": "铁塔",
+      "project": "设计",
       "image": "",
       "images": [],
       "price": 0,

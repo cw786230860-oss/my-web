@@ -1,22 +1,22 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T14:06:11.688Z",
+  "updatedAt": "2026-06-17T14:06:32.169Z",
   "records": [
     {
       "id": "Rmqi58me760bpa",
       "status": "审核中/未支付尾款",
       "month": "2026-04",
       "orderDate": "2026-04-20",
-      "finishDate": "2026-06-17",
+      "finishDate": "2026-04-25",
       "source": "小红书",
       "client": "联方",
-      "project": "",
+      "project": "logo设计",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 1000,
       "paid": 0,
-      "unpaid": 0,
-      "note": ""
+      "unpaid": 1000,
+      "note": "增值项目"
     },
     {
       "id": "Rmqi57n5bb4zrv",

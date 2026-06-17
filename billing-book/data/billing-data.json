@@ -1,55 +1,7 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T14:08:55.699Z",
+  "updatedAt": "2026-06-17T14:10:11.176Z",
   "records": [
-    {
-      "id": "Rmqi58me760bpa",
-      "status": "审核中/未支付尾款",
-      "month": "2026-04",
-      "orderDate": "2026-04-20",
-      "finishDate": "2026-04-25",
-      "source": "小红书",
-      "client": "联方",
-      "project": "logo设计",
-      "image": "",
-      "images": [],
-      "price": 1000,
-      "paid": 0,
-      "unpaid": 1000,
-      "note": "增值项目"
-    },
-    {
-      "id": "Rmqi57n5bb4zrv",
-      "status": "审核中/未支付尾款",
-      "month": "2026-01",
-      "orderDate": "2026-01-01",
-      "finishDate": "2026-03-31",
-      "source": "小红书",
-      "client": "铁塔",
-      "project": "设计",
-      "image": "",
-      "images": [],
-      "price": 1899,
-      "paid": 0,
-      "unpaid": 1899,
-      "note": ""
-    },
-    {
-      "id": "Rmqi56ekv0qvnv",
-      "status": "审核中/未支付尾款",
-      "month": "2026-04",
-      "orderDate": "2026-04-20",
-      "finishDate": "2026-05-19",
-      "source": "小红书",
-      "client": "星王",
-      "project": "希音项目",
-      "image": "",
-      "images": [],
-      "price": 2300,
-      "paid": 0,
-      "unpaid": 2300,
-      "note": "6.30日结算"
-    },
     {
       "id": "Rmqi4q0m4o7qq3",
       "status": "进行中",
@@ -134,7 +86,7 @@
     },
     {
       "id": "Rmqawkbr509mhc",
-      "status": "已完成",
+      "status": "进行中",
       "month": "2026-06",
       "orderDate": "2026-06-12",
       "finishDate": "2026-06-12",
@@ -254,7 +206,7 @@
     },
     {
       "id": "Rmq84anqitzxxv",
-      "status": "审核中/未支付尾款",
+      "status": "进行中",
       "month": "2026-06",
       "orderDate": "2026-06-10",
       "finishDate": "2026-06-10",
@@ -290,7 +242,7 @@
     },
     {
       "id": "Rmq54iac6vxwtp",
-      "status": "审核中/未支付尾款",
+      "status": "进行中",
       "month": "2026-06",
       "orderDate": "2026-06-08",
       "finishDate": "2026-06-10",
@@ -308,7 +260,7 @@
     },
     {
       "id": "Rmq0vx151f56o1",
-      "status": "审核中/未支付尾款",
+      "status": "已完成",
       "month": "2026-06",
       "orderDate": "2026-06-05",
       "finishDate": "2026-06-05",
@@ -344,7 +296,7 @@
     },
     {
       "id": "Rmpzgwhgkkvf3z",
-      "status": "审核中/未支付尾款",
+      "status": "已完成",
       "month": "2026-06",
       "orderDate": "2026-06-04",
       "finishDate": "2026-06-06",
@@ -362,7 +314,7 @@
     },
     {
       "id": "Rmpv1q59mfnfi1",
-      "status": "审核中/未支付尾款",
+      "status": "进行中",
       "month": "2026-06",
       "orderDate": "2026-06-01",
       "finishDate": "2026-06-07",

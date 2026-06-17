@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T13:58:38.335Z",
+  "updatedAt": "2026-06-17T13:58:59.334Z",
   "records": [
     {
       "id": "Rmqi4yhb57dp02",
@@ -15,7 +15,7 @@
       "images": [],
       "price": 1000,
       "paid": 0,
-      "unpaid": 0,
+      "unpaid": 1000,
       "note": "额外-logo设计"
     },
     {
@@ -29,9 +29,9 @@
       "project": "希音项目 ",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 2300,
       "paid": 0,
-      "unpaid": 0,
+      "unpaid": 2300,
       "note": "2026.6.30日结算"
     },
     {
@@ -45,9 +45,9 @@
       "project": "1900",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 1900,
       "paid": 0,
-      "unpaid": 0,
+      "unpaid": 1900,
       "note": "2026第一季度未结算账单"
     },
     {

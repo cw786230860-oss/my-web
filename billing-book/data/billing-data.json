@@ -1,15 +1,15 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T14:04:32.896Z",
+  "updatedAt": "2026-06-17T14:05:00.247Z",
   "records": [
     {
-      "id": "Rmqi56ekv0qvnv",
+      "id": "Rmqi57n5bb4zrv",
       "status": "进行中",
-      "month": "2026-04",
-      "orderDate": "2026-04-20",
-      "finishDate": "2026-05-19",
+      "month": "2026-06",
+      "orderDate": "2026-06-17",
+      "finishDate": "2026-06-17",
       "source": "小红书",
-      "client": "星王",
+      "client": "",
       "project": "",
       "image": "",
       "images": [],
@@ -17,6 +17,22 @@
       "paid": 0,
       "unpaid": 0,
       "note": ""
+    },
+    {
+      "id": "Rmqi56ekv0qvnv",
+      "status": "审核中/未支付尾款",
+      "month": "2026-04",
+      "orderDate": "2026-04-20",
+      "finishDate": "2026-05-19",
+      "source": "小红书",
+      "client": "星王",
+      "project": "希音项目",
+      "image": "",
+      "images": [],
+      "price": 2300,
+      "paid": 0,
+      "unpaid": 2300,
+      "note": "6.30日结算"
     },
     {
       "id": "Rmqi4q0m4o7qq3",

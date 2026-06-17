@@ -1,16 +1,16 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T13:56:55.281Z",
+  "updatedAt": "2026-06-17T13:57:11.149Z",
   "records": [
     {
       "id": "Rmqi4wu5iqkbwt",
       "status": "审核中/未支付尾款",
       "month": "2026-04",
       "orderDate": "2026-04-20",
-      "finishDate": "2026-06-17",
+      "finishDate": "2026-05-18",
       "source": "小红书",
-      "client": "",
-      "project": "",
+      "client": "星王",
+      "project": "希音项目 ",
       "image": "",
       "images": [],
       "price": 0,

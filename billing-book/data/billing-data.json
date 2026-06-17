@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-17T14:06:41.727Z",
+  "updatedAt": "2026-06-17T14:07:26.996Z",
   "records": [
     {
       "id": "Rmqi58me760bpa",
@@ -134,7 +134,7 @@
     },
     {
       "id": "Rmqawkbr509mhc",
-      "status": "进行中",
+      "status": "已完成",
       "month": "2026-06",
       "orderDate": "2026-06-12",
       "finishDate": "2026-06-12",

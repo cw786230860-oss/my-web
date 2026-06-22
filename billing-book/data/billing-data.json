@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updatedAt": "2026-06-22T11:16:07.021Z",
+  "updatedAt": "2026-06-22T11:16:18.294Z",
   "records": [
     {
       "id": "Rmqp4djf00u6sf",
@@ -13,9 +13,9 @@
       "project": "海报X4",
       "image": "",
       "images": [],
-      "price": 0,
+      "price": 600,
       "paid": 0,
-      "unpaid": 0,
+      "unpaid": 600,
       "note": ""
     },
     {
